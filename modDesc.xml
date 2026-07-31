@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="111" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>LazyChilla</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <de>Saatplan-Assistent</de>
+        <en>Field Crop Planner</en>
+    </title>
+
+    <description>
+        <de><![CDATA[Berechnet live einen Saatplan fuer maximale Autarkie.
+Zeigt pro Frucht Deckung, Jahresbedarf und Ueberschuss, verteilt freie Felder nach
+waehlbarer Strategie und blendet Aussaatfenster ein. Taste F7: Gesamtplan als
+Bildschirmanzeige ein-/ausblenden.
+
+SUPPORT: Fehler und Wuensche bitte ausschliesslich ueber GitHub melden, immer mit log.txt:
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Ohne log.txt kann niemand helfen. Kein Support ueber Kommentare auf Download-Seiten.]]></de>
+        <en><![CDATA[Calculates a live crop plan for maximum self-sufficiency.
+Shows coverage, annual demand and surplus per crop, distributes free fields by a
+selectable strategy and displays sowing windows. Key F7: toggle the overall plan
+as an on-screen overlay.
+
+SUPPORT: Please report bugs and requests only via GitHub, always with log.txt:
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Nobody can help without log.txt. No support via comments on download pages.]]></en>
+        <fr><![CDATA[Calcule en direct un plan de culture pour une autarcie maximale.
+Affiche par culture la couverture, le besoin annuel et l'excedent, repartit les champs
+libres selon une strategie au choix et indique les fenetres de semis. Touche F7 :
+afficher/masquer le plan global a l'ecran.
+
+SUPPORT : signalez les bugs et souhaits uniquement via GitHub, toujours avec log.txt :
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Personne ne peut aider sans log.txt. Pas de support via les commentaires des pages de telechargement.]]></fr>
+        <it><![CDATA[Calcola in tempo reale un piano colturale per la massima autarchia.
+Mostra per coltura la copertura, il fabbisogno annuo e l'eccedenza, distribuisce i campi
+liberi secondo una strategia a scelta e indica le finestre di semina. Tasto F7:
+mostra/nascondi il piano generale a schermo.
+
+SUPPORT: segnala bug e richieste solo tramite GitHub, sempre con log.txt:
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Senza log.txt nessuno puo aiutare. Nessun supporto tramite commenti sulle pagine di download.]]></it>
+        <pt><![CDATA[Calcula em tempo real um plano de culturas para maxima autossuficiencia.
+Mostra por cultura a cobertura, a necessidade anual e o excedente, distribui os campos
+livres segundo uma estrategia a escolha e indica as janelas de sementeira. Tecla F7:
+mostrar/ocultar o plano geral no ecra.
+
+SUPPORT: reporte erros e pedidos apenas via GitHub, sempre com log.txt:
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Ninguem consegue ajudar sem log.txt. Sem suporte via comentarios nas paginas de download.]]></pt>
+        <es><![CDATA[Calcula en tiempo real un plan de cultivos para la maxima autosuficiencia.
+Muestra por cultivo la cobertura, la demanda anual y el excedente, reparte los campos
+libres segun una estrategia a elegir e indica las ventanas de siembra. Tecla F7:
+mostrar/ocultar el plan general en pantalla.
+
+SUPPORT: informa de errores y peticiones solo por GitHub, siempre con log.txt:
+https://github.com/LazyChilla/FS25_FieldCropPlanner/issues
+Nadie puede ayudar sin log.txt. Sin soporte por comentarios en las paginas de descarga.]]></es>
+    </description>
+
+    <!-- modIcon: 512x512 DXT1 0-Mipmaps (ModHub/Testrunner-konform), erzeugt mit
+         dem GIANTS textureTool 9.0.1 aus dem FieldCropPlanner-Artwork (v0.9.15.79). -->
+    <iconFilename>images/modIcon.dds</iconFilename>
+
+    <!-- Reiner Lesezugriff auf Spieldaten, keine Schreibvorgaenge -> sollte MP-sicher sein -->
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="languages/l10n"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/PlantingCalendar.lua"/>
+        <sourceFile filename="gui/InGameMenuSP.lua"/>
+        <sourceFile filename="src/DemandScanner.lua"/>
+        <sourceFile filename="src/FieldScanner.lua"/>
+        <sourceFile filename="src/SeedPlanner.lua"/>
+        <sourceFile filename="src/SaatplanRequestEvent.lua"/>
+        <sourceFile filename="src/SaatplanResponseEvent.lua"/>
+        <sourceFile filename="src/main.lua"/>
+    </extraSourceFiles>
+</modDesc>
