@@ -1,0 +1,86 @@
+name: "🐞 Fehler melden / Bug report"
+description: "Etwas funktioniert nicht wie erwartet."
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für die Meldung! Bitte fülle die Felder aus — **ohne log.txt kann niemand helfen.**
+        Thanks! Please fill in the fields — **nobody can help without log.txt.**
+  - type: input
+    id: modversion
+    attributes:
+      label: "Mod-Version / Mod version"
+      description: "Steht im ESC-Menü-Titel (z.B. v0.9.15.82) oder in der modDesc."
+      placeholder: "v0.9.15.82"
+    validations:
+      required: true
+  - type: input
+    id: gameversion
+    attributes:
+      label: "FS25-Version / Game version"
+      placeholder: "1.21.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Singleplayer oder Multiplayer?"
+      options:
+        - "Singleplayer"
+        - "Multiplayer (Host)"
+        - "Multiplayer (Client)"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: "Was ist passiert? / What happened?"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was hattest du erwartet? / What did you expect?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Schritte zum Nachstellen / Steps to reproduce"
+      placeholder: |
+        1. ESC-Menü öffnen
+        2. Tab Einstellungen
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: "log.txt"
+      description: "Die GANZE Datei aus Dokumente\\My Games\\FarmingSimulator2025\\log.txt anhängen (reinziehen)."
+    validations:
+      required: true
+  - type: input
+    id: map
+    attributes:
+      label: "Karte / Map (optional)"
+      placeholder: "z.B. Nordfriesische Marsch"
+    validations:
+      required: false
+  - type: textarea
+    id: othermods
+    attributes:
+      label: "Andere aktive Mods / Other active mods (optional)"
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Gegenprüfung"
+      options:
+        - label: "Ich nutze die neueste Version des Mods."
+          required: true
+        - label: "In der log.txt steht die Zeile mit '[Saatplan] Mod geladen' (sonst war der Mod nicht aktiv)."
+          required: false

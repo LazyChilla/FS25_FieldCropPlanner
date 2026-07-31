@@ -1,0 +1,30 @@
+name: "💡 Wunsch / Feature request"
+description: "Eine Idee oder ein Wunsch für den Mod."
+title: "[Wunsch]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Erzähl mir das **Ziel**, nicht schon die fertige Lösung — oft gibt es einen einfacheren Weg.
+        Tell me the **goal**, not the finished solution — there is often a simpler way.
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Was willst du erreichen? / What do you want to achieve?"
+      description: "Welches Problem soll gelöst werden? Was nervt gerade?"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Wie stellst du es dir vor? / How do you imagine it? (optional)"
+    validations:
+      required: false
+  - type: input
+    id: existing
+    attributes:
+      label: "Kennst du einen Mod, der das schon macht? / Any mod that already does this?"
+      placeholder: "z.B. Name eines Mods"
+    validations:
+      required: false
