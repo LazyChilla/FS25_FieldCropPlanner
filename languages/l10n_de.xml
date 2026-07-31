@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title"         text="SAATPLAN-ASSISTENT"/>
+        <text name="ui_sp_tab_overall"   text="Gesamtplan"/>
+        <text name="ui_sp_tab_filter" text="Früchte"/>
+        <text name="ui_sp_tab_fields"    text="Felder"/>
+        <text name="ui_sp_col_fruit"     text="Frucht"/>
+        <text name="ui_sp_col_pct"       text="Quote"/>
+        <text name="ui_sp_col_demand"    text="Jahresbedarf"/>
+        <text name="ui_sp_col_active"    text="Status"/>
+        <text name="ui_sp_col_fieldnr"   text="Feld"/>
+        <text name="ui_sp_col_area"      text="Flaeche"/>
+        <text name="ui_sp_btn_recalc"    text="Neu berechnen"/>
+        <text name="ui_sp_hint_accept"   text="Auswaehlen"/>
+        <text name="ui_sp_hint_expand"   text="Klick = aufklappen / zuklappen"/>
+        <text name="ui_sp_col_cumul"     text="Kumuliert"/>
+        <text name="ui_sp_col_afterpct"  text="Danach"/>
+        <text name="ui_sp_col_surplus"   text="Ueberschuss"/>
+        <text name="ui_sp_min_size"      text="Mindestgroesse:"/>
+        <text name="ui_sp_fields_hint"   text="Klick = Feld ein-/ausschliessen"/>
+        <text name="ui_sp_col_schnitt"   text="Schnitte/Jahr"/>
+        <text name="ui_sp_col_cal"       text="Aussaat"/>
+        <text name="ui_sp_schnitt_hint"  text="Schnitte/Jahr fuer selektierte Frucht:"/>
+        <text name="ui_sp_fields_title"  text="Eigene Felder"/>
+        <text name="ui_sp_tab_exclude" text="Felderausschluss"/>
+        <text name="ui_sp_tab_settings" text="Einstellungen"/>
+        <text name="ui_sp_settings_title" text="Zuteilung freier Felder"/>
+        <text name="ui_sp_settings_allocStrategy" text="Zuteilungsstrategie"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="Wie freie Felder auf mehrere unterversorgte Fruchtarten verteilt werden, wenn nicht genug Felder fuer alle da sind."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Größte Lücke (Liter)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Größte Lücke (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="Reihum"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="Frucht mit den absolut meisten fehlenden Litern bekommt zuerst ein Feld."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="Prozentual am schlechtesten gedeckte Frucht bekommt zuerst ein Feld."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="Reihum: jede unterversorgte Frucht bekommt der Reihe nach abwechselnd ein Feld."/>
+        <text name="ui_sp_settings_fieldCut" text="Felder ab Nr. ignorieren"/>
+        <text name="ui_sp_settings_fieldCut_off" text="aus"/>
+        <text name="ui_sp_settings_fieldCut_val" text="ab Nr. %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="Alle Felder mit einer Nummer ab diesem Wert werden aus Plan und Bedarf ausgeschlossen (0 = aus). Nur lokal, kein Mehrspieler-Sync."/>
+        <text name="ui_sp_settings_seedinfo" text="Spalte 'SPIEL / REAL': Spielwert (aus Spieldaten) und realer Richtwert in Litern fuer das gesamte Feld. Realwert: Ermittelt aus mehreren oeffentlichen Quellen. Nur als Orientierung."/>
+        <text name="ui_sp_legend" text="Grün = besät  |  Gelb = im Plan (ansäen)  |  Weiß = frei  |  Rot = ausgeschlossen  |  Cyan = freigeben?  |  Blau = freigegeben"/>
+        <text name="ui_sp_release_hint" text="   Cyan = Feld einer überversorgten Frucht: mit Enter freigeben (nur diese Sitzung, nach Neustart neu setzen)"/>
+        <text name="ui_sp_btn_toggle" text="AN/AUS"/>
+        <text name="ui_sp_btn_release" text="Freigeben"/>
+        <text name="ui_sp_btn_plus" text="Schnitte +"/>
+        <text name="ui_sp_btn_minus" text="Schnitte -"/>
+        <text name="ui_sp_col_seed" text="Saatgut"/>
+        <text name="sp_cal_months" text="Mär,Apr,Mai,Jun,Jul,Aug,Sep,Okt,Nov,Dez,Jan,Feb"/>
+        <text name="sp_cal_prefix" text="Aussaat"/>
+        <text name="sp_cal_allYear" text="ganzjährig"/>
+        <text name="sp_map_labels_hide" text="Saat-Labels ausblenden"/>
+        <text name="sp_map_labels_show" text="Saat-Labels einblenden"/>
+    </texts>
+</l10n>

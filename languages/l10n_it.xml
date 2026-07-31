@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title" text="ASSISTENTE PIANO COLTURE"/>
+        <text name="ui_sp_tab_overall" text="Piano generale"/>
+        <text name="ui_sp_tab_filter" text="Colture"/>
+        <text name="ui_sp_tab_fields" text="Campi"/>
+        <text name="ui_sp_col_fruit" text="Coltura"/>
+        <text name="ui_sp_col_pct" text="Copertura"/>
+        <text name="ui_sp_col_demand" text="Fabbisogno annuo"/>
+        <text name="ui_sp_col_active" text="Stato"/>
+        <text name="ui_sp_col_fieldnr" text="Campo"/>
+        <text name="ui_sp_col_area" text="Superficie"/>
+        <text name="ui_sp_btn_recalc" text="Ricalcola"/>
+        <text name="ui_sp_hint_accept" text="Seleziona"/>
+        <text name="ui_sp_hint_expand" text="Clic = espandi / comprimi"/>
+        <text name="ui_sp_col_cumul" text="Cumulato"/>
+        <text name="ui_sp_col_afterpct" text="Dopo"/>
+        <text name="ui_sp_col_surplus" text="Eccedenza"/>
+        <text name="ui_sp_min_size" text="Dim. minima:"/>
+        <text name="ui_sp_fields_hint" text="Clic = includi/escludi campo"/>
+        <text name="ui_sp_col_schnitt" text="Tagli/anno"/>
+        <text name="ui_sp_col_cal" text="Semina"/>
+        <text name="ui_sp_schnitt_hint" text="Tagli all'anno per la coltura selezionata:"/>
+        <text name="ui_sp_fields_title" text="I miei campi"/>
+        <text name="ui_sp_tab_exclude" text="Esclusione campi"/>
+        <text name="ui_sp_tab_settings" text="Impostazioni"/>
+        <text name="ui_sp_settings_title" text="Assegnazione campi liberi"/>
+        <text name="ui_sp_settings_allocStrategy" text="Strategia di assegnazione"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="Come i campi liberi vengono distribuiti tra più colture non sufficientemente rifornite quando non ce ne sono abbastanza per tutte."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Divario maggiore (litri)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Divario maggiore (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="A rotazione"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="La coltura a cui mancano più litri in assoluto riceve per prima un campo."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="La coltura con la copertura percentuale peggiore riceve per prima un campo."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="A rotazione: ogni coltura carente riceve un campo a turno, una dopo l'altra."/>
+        <text name="ui_sp_settings_fieldCut" text="Ignora campi dal n."/>
+        <text name="ui_sp_settings_fieldCut_off" text="off"/>
+        <text name="ui_sp_settings_fieldCut_val" text="dal n. %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="Tutti i campi numerati da questo valore in su sono esclusi da piano e fabbisogno (0 = off). Solo locale, nessuna sincronizzazione multiplayer."/>
+        <text name="ui_sp_settings_seedinfo" text="Colonna 'GIOCO / REALE': valore di gioco (dai dati di gioco) e riferimento reale in litri per l'intero campo. Valore reale: da più fonti pubbliche. Solo indicativo."/>
+        <text name="ui_sp_legend" text="Verde = seminato  |  Giallo = pianificato (semina)  |  Bianco = libero  |  Rosso = escluso  |  Ciano = rilasciare?  |  Blu = rilasciato"/>
+        <text name="ui_sp_release_hint" text="   Ciano = campo di una coltura in eccedenza: premi Invio per rilasciare (solo questa sessione, da rifare dopo il riavvio)"/>
+        <text name="ui_sp_btn_toggle" text="ON/OFF"/>
+        <text name="ui_sp_btn_release" text="Rilascia"/>
+        <text name="ui_sp_btn_plus" text="Tagli +"/>
+        <text name="ui_sp_btn_minus" text="Tagli -"/>
+        <text name="ui_sp_col_seed" text="Sementi"/>
+        <text name="sp_cal_months" text="Mar,Apr,Mag,Giu,Lug,Ago,Set,Ott,Nov,Dic,Gen,Feb"/>
+        <text name="sp_cal_prefix" text="Semina"/>
+        <text name="sp_cal_allYear" text="tutto l'anno"/>
+        <text name="sp_map_labels_hide" text="Nascondi etichette di semina"/>
+        <text name="sp_map_labels_show" text="Mostra etichette di semina"/>
+    </texts>
+</l10n>

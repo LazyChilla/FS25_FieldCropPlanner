@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title" text="ASSISTENTE DE PLANO DE CULTURAS"/>
+        <text name="ui_sp_tab_overall" text="Plano geral"/>
+        <text name="ui_sp_tab_filter" text="Culturas"/>
+        <text name="ui_sp_tab_fields" text="Campos"/>
+        <text name="ui_sp_col_fruit" text="Cultura"/>
+        <text name="ui_sp_col_pct" text="Cobertura"/>
+        <text name="ui_sp_col_demand" text="Necessidade anual"/>
+        <text name="ui_sp_col_active" text="Estado"/>
+        <text name="ui_sp_col_fieldnr" text="Campo"/>
+        <text name="ui_sp_col_area" text="Área"/>
+        <text name="ui_sp_btn_recalc" text="Recalcular"/>
+        <text name="ui_sp_hint_accept" text="Selecionar"/>
+        <text name="ui_sp_hint_expand" text="Clique = expandir / recolher"/>
+        <text name="ui_sp_col_cumul" text="Acumulado"/>
+        <text name="ui_sp_col_afterpct" text="Depois"/>
+        <text name="ui_sp_col_surplus" text="Excedente"/>
+        <text name="ui_sp_min_size" text="Tam. mín.:"/>
+        <text name="ui_sp_fields_hint" text="Clique = incluir/excluir campo"/>
+        <text name="ui_sp_col_schnitt" text="Cortes/ano"/>
+        <text name="ui_sp_col_cal" text="Sementeira"/>
+        <text name="ui_sp_schnitt_hint" text="Cortes por ano para a cultura selecionada:"/>
+        <text name="ui_sp_fields_title" text="Os meus campos"/>
+        <text name="ui_sp_tab_exclude" text="Exclusão de campos"/>
+        <text name="ui_sp_tab_settings" text="Definições"/>
+        <text name="ui_sp_settings_title" text="Atribuição de campos livres"/>
+        <text name="ui_sp_settings_allocStrategy" text="Estratégia de atribuição"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="Como os campos livres são distribuídos por várias culturas mal abastecidas quando não há campos suficientes para todas."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Maior défice (litros)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Maior défice (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="Rotativo"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="A cultura a que faltam mais litros no total recebe um campo primeiro."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="A cultura com pior cobertura percentual recebe um campo primeiro."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="Rotativo: cada cultura em falta recebe um campo à vez, uma após outra."/>
+        <text name="ui_sp_settings_fieldCut" text="Ignorar campos a partir do n.º"/>
+        <text name="ui_sp_settings_fieldCut_off" text="desl."/>
+        <text name="ui_sp_settings_fieldCut_val" text="a partir do n.º %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="Todos os campos numerados a partir deste valor são excluídos do plano e da necessidade (0 = desligado). Apenas local, sem sincronização multijogador."/>
+        <text name="ui_sp_settings_seedinfo" text="Coluna 'JOGO / REAL': valor do jogo (dados do jogo) e referência real em litros para todo o campo. Valor real: de várias fontes públicas. Apenas orientativo."/>
+        <text name="ui_sp_legend" text="Verde = semeado  |  Amarelo = planeado (semear)  |  Branco = livre  |  Vermelho = excluído  |  Ciano = libertar?  |  Azul = libertado"/>
+        <text name="ui_sp_release_hint" text="   Ciano = campo de uma cultura em excesso: prima Enter para libertar (apenas esta sessão, repor após reiniciar)"/>
+        <text name="ui_sp_btn_toggle" text="LIG/DESL"/>
+        <text name="ui_sp_btn_release" text="Libertar"/>
+        <text name="ui_sp_btn_plus" text="Cortes +"/>
+        <text name="ui_sp_btn_minus" text="Cortes -"/>
+        <text name="ui_sp_col_seed" text="Sementes"/>
+        <text name="sp_cal_months" text="Mar,Abr,Mai,Jun,Jul,Ago,Set,Out,Nov,Dez,Jan,Fev"/>
+        <text name="sp_cal_prefix" text="Sementeira"/>
+        <text name="sp_cal_allYear" text="todo o ano"/>
+        <text name="sp_map_labels_hide" text="Ocultar etiquetas de sementeira"/>
+        <text name="sp_map_labels_show" text="Mostrar etiquetas de sementeira"/>
+    </texts>
+</l10n>

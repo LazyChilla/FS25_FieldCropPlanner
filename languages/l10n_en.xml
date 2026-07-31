@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title"         text="CROP PLAN ASSISTANT"/>
+        <text name="ui_sp_tab_overall"   text="Overall Plan"/>
+        <text name="ui_sp_tab_filter" text="Crops"/>
+        <text name="ui_sp_tab_fields"    text="Fields"/>
+        <text name="ui_sp_col_fruit"     text="Crop"/>
+        <text name="ui_sp_col_pct"       text="Coverage"/>
+        <text name="ui_sp_col_demand"    text="Annual Demand"/>
+        <text name="ui_sp_col_active"    text="Status"/>
+        <text name="ui_sp_col_fieldnr"   text="Field"/>
+        <text name="ui_sp_col_area"      text="Area"/>
+        <text name="ui_sp_btn_recalc"    text="Recalculate"/>
+        <text name="ui_sp_hint_accept"   text="Select"/>
+        <text name="ui_sp_hint_expand"   text="Click = expand / collapse"/>
+        <text name="ui_sp_col_cumul"     text="Cumulative"/>
+        <text name="ui_sp_col_afterpct"  text="After"/>
+        <text name="ui_sp_col_surplus"   text="Surplus"/>
+        <text name="ui_sp_min_size"      text="Min. size:"/>
+        <text name="ui_sp_fields_hint"   text="Click = include/exclude field"/>
+        <text name="ui_sp_col_schnitt"   text="Cuts/Year"/>
+        <text name="ui_sp_col_cal"       text="Sowing"/>
+        <text name="ui_sp_schnitt_hint"  text="Cuts per year for selected crop:"/>
+        <text name="ui_sp_fields_title"  text="Own Fields"/>
+        <text name="ui_sp_tab_exclude" text="Field exclusion"/>
+        <text name="ui_sp_tab_settings" text="Settings"/>
+        <text name="ui_sp_settings_title" text="Free field allocation"/>
+        <text name="ui_sp_settings_allocStrategy" text="Allocation strategy"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="How free fields are distributed across multiple underserved crops when there aren't enough fields for all of them."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Biggest gap (liters)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Biggest gap (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="Round robin"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="The crop missing the most liters overall gets a field first."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="The crop with the worst percentage coverage gets a field first."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="Round robin: each undersupplied crop gets a field in turn, one after another."/>
+        <text name="ui_sp_settings_fieldCut" text="Ignore fields from no."/>
+        <text name="ui_sp_settings_fieldCut_off" text="off"/>
+        <text name="ui_sp_settings_fieldCut_val" text="from no. %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="All fields numbered from this value up are excluded from plan and demand (0 = off). Local only, no multiplayer sync."/>
+        <text name="ui_sp_settings_seedinfo" text="Column 'GAME / REAL': Game value (from game data) and real-world reference in liters for the entire field. Real value: Derived from multiple public sources. For guidance only."/>
+        <text name="ui_sp_legend" text="Green = sown  |  Yellow = planned (sow)  |  White = free  |  Red = excluded  |  Light blue = release?  |  Blue = released"/>
+        <text name="ui_sp_release_hint" text="   Cyan = field of an oversupplied fruit: press Enter to release (this session only, re-set after restart)"/>
+        <text name="ui_sp_btn_toggle" text="ON/OFF"/>
+        <text name="ui_sp_btn_release" text="Release"/>
+        <text name="ui_sp_btn_plus" text="Cuts +"/>
+        <text name="ui_sp_btn_minus" text="Cuts -"/>
+        <text name="ui_sp_col_seed" text="Seeds"/>
+        <text name="sp_cal_months" text="Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Jan,Feb"/>
+        <text name="sp_cal_prefix" text="Sowing"/>
+        <text name="sp_cal_allYear" text="all year"/>
+        <text name="sp_map_labels_hide" text="Hide sowing labels"/>
+        <text name="sp_map_labels_show" text="Show sowing labels"/>
+    </texts>
+</l10n>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title" text="ASSISTANT PLAN DE CULTURE"/>
+        <text name="ui_sp_tab_overall" text="Plan global"/>
+        <text name="ui_sp_tab_filter" text="Cultures"/>
+        <text name="ui_sp_tab_fields" text="Champs"/>
+        <text name="ui_sp_col_fruit" text="Culture"/>
+        <text name="ui_sp_col_pct" text="Couverture"/>
+        <text name="ui_sp_col_demand" text="Besoin annuel"/>
+        <text name="ui_sp_col_active" text="Statut"/>
+        <text name="ui_sp_col_fieldnr" text="Champ"/>
+        <text name="ui_sp_col_area" text="Surface"/>
+        <text name="ui_sp_btn_recalc" text="Recalculer"/>
+        <text name="ui_sp_hint_accept" text="Sélectionner"/>
+        <text name="ui_sp_hint_expand" text="Clic = déplier / replier"/>
+        <text name="ui_sp_col_cumul" text="Cumulé"/>
+        <text name="ui_sp_col_afterpct" text="Après"/>
+        <text name="ui_sp_col_surplus" text="Excédent"/>
+        <text name="ui_sp_min_size" text="Taille min. :"/>
+        <text name="ui_sp_fields_hint" text="Clic = inclure/exclure le champ"/>
+        <text name="ui_sp_col_schnitt" text="Coupes/an"/>
+        <text name="ui_sp_col_cal" text="Semis"/>
+        <text name="ui_sp_schnitt_hint" text="Coupes par an pour la culture sélectionnée :"/>
+        <text name="ui_sp_fields_title" text="Mes champs"/>
+        <text name="ui_sp_tab_exclude" text="Exclusion de champs"/>
+        <text name="ui_sp_tab_settings" text="Réglages"/>
+        <text name="ui_sp_settings_title" text="Attribution des champs libres"/>
+        <text name="ui_sp_settings_allocStrategy" text="Stratégie d'attribution"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="Comment les champs libres sont répartis entre plusieurs cultures sous-approvisionnées quand il n'y en a pas assez pour toutes."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Plus grand écart (litres)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Plus grand écart (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="Chacun son tour"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="La culture à laquelle il manque le plus de litres reçoit un champ en premier."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="La culture la moins bien couverte en pourcentage reçoit un champ en premier."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="Chacun son tour : chaque culture en manque reçoit un champ à tour de rôle."/>
+        <text name="ui_sp_settings_fieldCut" text="Ignorer les champs à partir du n°"/>
+        <text name="ui_sp_settings_fieldCut_off" text="arrêt"/>
+        <text name="ui_sp_settings_fieldCut_val" text="à partir du n° %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="Tous les champs numérotés à partir de cette valeur sont exclus du plan et du besoin (0 = arrêt). Local uniquement, pas de synchro multijoueur."/>
+        <text name="ui_sp_settings_seedinfo" text="Colonne « JEU / RÉEL » : valeur du jeu (données du jeu) et référence réelle en litres pour tout le champ. Valeur réelle : issue de plusieurs sources publiques. À titre indicatif."/>
+        <text name="ui_sp_legend" text="Vert = semé  |  Jaune = prévu (à semer)  |  Blanc = libre  |  Rouge = exclu  |  Cyan = libérer ?  |  Bleu = libéré"/>
+        <text name="ui_sp_release_hint" text="   Cyan = champ d'une culture excédentaire : appuyez sur Entrée pour libérer (cette session seulement, à refaire après redémarrage)"/>
+        <text name="ui_sp_btn_toggle" text="ON/OFF"/>
+        <text name="ui_sp_btn_release" text="Libérer"/>
+        <text name="ui_sp_btn_plus" text="Coupes +"/>
+        <text name="ui_sp_btn_minus" text="Coupes -"/>
+        <text name="ui_sp_col_seed" text="Semences"/>
+        <text name="sp_cal_months" text="Mar,Avr,Mai,Juin,Juil,Août,Sep,Oct,Nov,Déc,Jan,Fév"/>
+        <text name="sp_cal_prefix" text="Semis"/>
+        <text name="sp_cal_allYear" text="toute l'année"/>
+        <text name="sp_map_labels_hide" text="Masquer les étiquettes de semis"/>
+        <text name="sp_map_labels_show" text="Afficher les étiquettes de semis"/>
+    </texts>
+</l10n>

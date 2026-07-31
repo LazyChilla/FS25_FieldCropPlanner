@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_sp_title" text="ASISTENTE DE PLAN DE CULTIVOS"/>
+        <text name="ui_sp_tab_overall" text="Plan general"/>
+        <text name="ui_sp_tab_filter" text="Cultivos"/>
+        <text name="ui_sp_tab_fields" text="Campos"/>
+        <text name="ui_sp_col_fruit" text="Cultivo"/>
+        <text name="ui_sp_col_pct" text="Cobertura"/>
+        <text name="ui_sp_col_demand" text="Demanda anual"/>
+        <text name="ui_sp_col_active" text="Estado"/>
+        <text name="ui_sp_col_fieldnr" text="Campo"/>
+        <text name="ui_sp_col_area" text="Superficie"/>
+        <text name="ui_sp_btn_recalc" text="Recalcular"/>
+        <text name="ui_sp_hint_accept" text="Seleccionar"/>
+        <text name="ui_sp_hint_expand" text="Clic = desplegar / plegar"/>
+        <text name="ui_sp_col_cumul" text="Acumulado"/>
+        <text name="ui_sp_col_afterpct" text="Después"/>
+        <text name="ui_sp_col_surplus" text="Excedente"/>
+        <text name="ui_sp_min_size" text="Tam. mín.:"/>
+        <text name="ui_sp_fields_hint" text="Clic = incluir/excluir campo"/>
+        <text name="ui_sp_col_schnitt" text="Cortes/año"/>
+        <text name="ui_sp_col_cal" text="Siembra"/>
+        <text name="ui_sp_schnitt_hint" text="Cortes por año para el cultivo seleccionado:"/>
+        <text name="ui_sp_fields_title" text="Mis campos"/>
+        <text name="ui_sp_tab_exclude" text="Exclusión de campos"/>
+        <text name="ui_sp_tab_settings" text="Ajustes"/>
+        <text name="ui_sp_settings_title" text="Asignación de campos libres"/>
+        <text name="ui_sp_settings_allocStrategy" text="Estrategia de asignación"/>
+        <text name="ui_sp_settings_allocStrategy_tooltip" text="Cómo se reparten los campos libres entre varios cultivos poco abastecidos cuando no hay suficientes para todos."/>
+        <text name="ui_sp_settings_allocStrategy_absolut" text="Mayor déficit (litros)"/>
+        <text name="ui_sp_settings_allocStrategy_prozent" text="Mayor déficit (%)"/>
+        <text name="ui_sp_settings_allocStrategy_reihum" text="Por turnos"/>
+        <text name="ui_sp_settings_allocStrategy_desc_absolut" text="El cultivo al que le faltan más litros en total recibe un campo primero."/>
+        <text name="ui_sp_settings_allocStrategy_desc_prozent" text="El cultivo con peor cobertura porcentual recibe un campo primero."/>
+        <text name="ui_sp_settings_allocStrategy_desc_reihum" text="Por turnos: cada cultivo en déficit recibe un campo por turno, uno tras otro."/>
+        <text name="ui_sp_settings_fieldCut" text="Ignorar campos desde el n.º"/>
+        <text name="ui_sp_settings_fieldCut_off" text="desact."/>
+        <text name="ui_sp_settings_fieldCut_val" text="desde el n.º %d"/>
+        <text name="ui_sp_settings_fieldCut_tooltip" text="Todos los campos numerados a partir de este valor se excluyen del plan y la demanda (0 = desactivado). Solo local, sin sincronización multijugador."/>
+        <text name="ui_sp_settings_seedinfo" text="Columna 'JUEGO / REAL': valor del juego (datos del juego) y referencia real en litros para todo el campo. Valor real: de varias fuentes públicas. Solo orientativo."/>
+        <text name="ui_sp_legend" text="Verde = sembrado  |  Amarillo = planificado (sembrar)  |  Blanco = libre  |  Rojo = excluido  |  Cian = ¿liberar?  |  Azul = liberado"/>
+        <text name="ui_sp_release_hint" text="   Cian = campo de un cultivo excedente: pulsa Intro para liberar (solo esta sesión, restablecer tras reiniciar)"/>
+        <text name="ui_sp_btn_toggle" text="ON/OFF"/>
+        <text name="ui_sp_btn_release" text="Liberar"/>
+        <text name="ui_sp_btn_plus" text="Cortes +"/>
+        <text name="ui_sp_btn_minus" text="Cortes -"/>
+        <text name="ui_sp_col_seed" text="Semillas"/>
+        <text name="sp_cal_months" text="Mar,Abr,May,Jun,Jul,Ago,Sep,Oct,Nov,Dic,Ene,Feb"/>
+        <text name="sp_cal_prefix" text="Siembra"/>
+        <text name="sp_cal_allYear" text="todo el año"/>
+        <text name="sp_map_labels_hide" text="Ocultar etiquetas de siembra"/>
+        <text name="sp_map_labels_show" text="Mostrar etiquetas de siembra"/>
+    </texts>
+</l10n>
