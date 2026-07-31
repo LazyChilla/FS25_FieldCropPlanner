@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI name="ingameMenuSP">
+    <GuiElement profile="fs25_menuContainer">
+
+        <GuiElement profile="fs25_menuHeaderPanel">
+            <Text profile="fs25_menuHeaderTitle" id="categoryHeaderText" text="$l10n_ui_sp_title"/>
+        </GuiElement>
+
+        <!-- Tab-Buttons + Stat-Zeile -->
+        <GuiElement profile="fs25_statisticsHeaderBox">
+            <Button profile="spTabBtn" id="spBtnTab1" position="0px 0px"   size="230px 32px" text="$l10n_ui_sp_tab_overall" onClick="onClickTab1"/>
+            <Button profile="spTabBtn" id="spBtnTab2" position="240px 0px" size="160px 32px" text="$l10n_ui_sp_tab_filter"  onClick="onClickTab2"/>
+            <Button profile="spTabBtn" id="spBtnTab3" position="410px 0px" size="160px 32px" text="$l10n_ui_sp_tab_fields"  onClick="onClickTab3"/>
+            <Button profile="spTabBtn" id="spBtnTab4" position="580px 0px" size="200px 32px" text="$l10n_ui_sp_tab_exclude" onClick="onClickTab4"/>
+            <Button profile="spTabBtn" id="spBtnTab5" position="790px 0px" size="190px 32px" text="$l10n_ui_sp_tab_settings" onClick="onClickTab5"/>
+            <Text profile="spColRight" id="spHintText" position="990px 0px" size="160px 32px" text="$l10n_ui_sp_hint_expand"/>
+            <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+        </GuiElement>
+
+        <!-- Stat-Zeile Tab 1: Autarkie + Feldzaehler -->
+        <GuiElement id="spStatBar" profile="fs25_statisticsHeaderBox" position="0px -42px">
+            <Text profile="spCol1" id="spStatAutarkie" position="0px 4px"   size="220px 32px" text="Autarkie: ?%"/>
+            <Text profile="spCol1" id="spStatFelder"   position="230px 4px" size="720px 32px" text=""/>
+            <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+        </GuiElement>
+
+        <!-- TAB 1: Gesamtplan (Akkordeon) -->
+        <GuiElement id="spTab1" profile="emptyPanel" with="anchorStretchingYLeft pivotTopLeft" position="0px 0px" absoluteSizeOffset="0px 0px">
+
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -82px">
+                <Button profile="spSortBtn" id="spSort1Name"   position="0px 0px"    size="280px 32px" text="$l10n_ui_sp_col_fruit"   onClick="onClickSort1Name"/>
+                <Button profile="spSortBtn" id="spSort1Pct"    position="290px 0px"  size="80px 32px"  text="$l10n_ui_sp_col_pct"     onClick="onClickSort1Pct"/>
+                <Button profile="spSortBtn" id="spSort1Demand" position="380px 0px"  size="160px 32px" text="$l10n_ui_sp_col_demand"   onClick="onClickSort1Demand"/>
+                <Text profile="spColRight"  position="550px 0px"  size="130px 32px" text="$l10n_ui_sp_col_cumul"/>
+                <Text profile="spColRight"  position="690px 0px"  size="60px 32px"  text="$l10n_ui_sp_col_afterpct"/>
+                <Text profile="spColRight"  position="760px 0px"  size="110px 32px" text="$l10n_ui_sp_col_surplus"/>
+                <Button profile="spSortBtn" id="spSort1Seed"   position="880px 0px"  size="110px 32px" text="$l10n_ui_sp_col_seed"     onClick="onClickSort1Seed"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <SmoothList profile="spList" id="spMainList" position="0px -122px" absoluteSizeOffset="0px 122px" onClick="onClickMain">
+                <ListItem profile="spMainItem" name="rowTemplate">
+                    <Text profile="spCol1"      position="0px 0px"    size="1020px 40px" name="hint"/>
+                    <Text profile="spCol1"      position="0px 0px"    size="280px 40px" name="col1"/>
+                    <Text profile="spColRight"  position="290px 0px"  size="80px 40px"  name="col2"/>
+                    <Text profile="spColRight"  position="380px 0px"  size="160px 40px" name="col3"/>
+                    <Text profile="spColRight"  position="550px 0px"  size="130px 40px" name="col4"/>
+                    <Text profile="spColRight"  position="690px 0px"  size="60px 40px"  name="col5"/>
+                    <Text profile="spColRight"  position="760px 0px"  size="110px 40px" name="col6"/>
+                    <Text profile="spColRight"  position="880px 0px"  size="110px 40px" name="col8"/>
+                    <Text profile="spColCenter" position="995px 0px"  size="30px 40px"  name="col7"/>
+                </ListItem>
+            </SmoothList>
+
+        </GuiElement>
+
+        <!-- TAB 2: Früchte-Filter -->
+        <GuiElement id="spTab2" profile="emptyPanel" with="anchorStretchingYLeft pivotTopLeft" position="0px 0px" absoluteSizeOffset="0px 0px" visible="false">
+
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -82px">
+                <Button profile="spSortBtn" id="spSort2Name"   position="0px 0px"    size="340px 32px" text="$l10n_ui_sp_col_fruit"  onClick="onClickSort2Name"/>
+                <Button profile="spSortBtn" id="spSort2Demand" position="350px 0px"  size="180px 32px" text="$l10n_ui_sp_col_demand"  onClick="onClickSort2Demand"/>
+                <Button profile="spSortBtn" id="spSort2Active" position="540px 0px"  size="100px 32px" text="$l10n_ui_sp_col_active"  onClick="onClickSort2Active"/>
+                <Text profile="spColRight"  position="650px 0px"  size="80px 32px"  text="$l10n_ui_sp_col_schnitt"/>
+                <Text profile="spColRight"  id="spMultiLabel"  position="735px 0px"  size="50px 32px"  text="—"/>
+                <Text profile="spCol1"  position="810px 0px"  size="220px 32px"  text="$l10n_ui_sp_col_cal"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <SmoothList profile="spList" id="spFilterList" position="0px -122px" absoluteSizeOffset="0px 122px" onClick="onClickFilter">
+                <ListItem profile="spMainItem" name="rowTemplate">
+                    <Text profile="spCol1"     position="0px 0px"    size="340px 40px" name="fName"/>
+                    <Text profile="spColRight" position="350px 0px"  size="180px 40px" name="fDemand"/>
+                    <Text profile="spColRight" position="540px 0px"  size="100px 40px" name="fActive"/>
+                    <Text profile="spColRight" position="650px 0px"  size="140px 40px" name="fMulti"/>
+                    <Text profile="spCol1"     position="810px 0px"  size="220px 40px" name="fCal"/>
+                </ListItem>
+            </SmoothList>
+
+        </GuiElement>
+
+        <!-- TAB 3: Feldübersicht (SmoothList, 10 Felder pro Zeile) -->
+        <GuiElement id="spTab3" profile="emptyPanel" with="anchorStretchingYLeft pivotTopLeft" position="0px 0px" absoluteSizeOffset="0px 0px" visible="false">
+
+            <!-- Zusammenfassung + Mindestgroesse -->
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -82px">
+                <Text profile="spCol1" id="spOverviewStat" position="0px 4px" size="950px 32px" text=""/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <SmoothList profile="spList" id="spFieldGrid" position="0px -122px" absoluteSizeOffset="0px 122px" onClick="onClickFieldGrid">
+                <ListItem profile="spFieldGridItem" name="rowTemplate">
+                    <Text profile="spFN" position="0px 2px"   size="88px 28px" name="fn1"/>
+                    <Text profile="spFN" position="92px 2px"  size="88px 28px" name="fn2"/>
+                    <Text profile="spFN" position="184px 2px" size="88px 28px" name="fn3"/>
+                    <Text profile="spFN" position="276px 2px" size="88px 28px" name="fn4"/>
+                    <Text profile="spFN" position="368px 2px" size="88px 28px" name="fn5"/>
+                    <Text profile="spFN" position="460px 2px" size="88px 28px" name="fn6"/>
+                    <Text profile="spFN" position="552px 2px" size="88px 28px" name="fn7"/>
+                    <Text profile="spFN" position="644px 2px" size="88px 28px" name="fn8"/>
+                    <Text profile="spFN" position="736px 2px" size="88px 28px" name="fn9"/>
+                    <Text profile="spFN" position="828px 2px" size="88px 28px" name="fn10"/>
+                </ListItem>
+            </SmoothList>
+
+            <!-- Legende -->
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -430px">
+                <Text profile="spCol1" id="spLegendText" position="0px 4px" size="950px 32px" text="$l10n_ui_sp_legend"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+        </GuiElement>
+
+        <!-- TAB 4: Felderausschluss -->
+        <GuiElement id="spTab4" profile="emptyPanel" with="anchorStretchingYLeft pivotTopLeft" position="0px 0px" absoluteSizeOffset="0px 0px" visible="false">
+
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -82px">
+                <Text profile="spCol1" position="0px 4px" size="300px 32px" text="$l10n_ui_sp_fields_title"/>
+                <Text profile="spCol1" position="310px 4px" size="160px 32px" text="$l10n_ui_sp_min_size"/>
+                <Button profile="spTabBtn" id="spMinSizeDec" position="475px 0px" size="36px 32px" text="-" onClick="onClickMinSizeDec"/>
+                <Text profile="spColRight" id="spMinSizeText" position="514px 4px" size="70px 32px" text="aus"/>
+                <Button profile="spTabBtn" id="spMinSizeInc" position="587px 0px" size="36px 32px" text="+" onClick="onClickMinSizeInc"/>
+                <Text profile="spColRight" position="640px 4px" size="300px 32px" text="$l10n_ui_sp_fields_hint"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -122px">
+                <Text profile="spCol1"     position="0px 0px"   size="120px 32px" text="$l10n_ui_sp_col_fieldnr"/>
+                <Text profile="spColRight" position="130px 0px" size="120px 32px" text="$l10n_ui_sp_col_area"/>
+                <Text profile="spColRight" position="260px 0px" size="200px 32px" text="$l10n_ui_sp_col_fruit"/>
+                <Text profile="spColRight" position="470px 0px" size="220px 32px" text="$l10n_ui_sp_col_active"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <SmoothList profile="spList" id="spFieldList" position="0px -162px" absoluteSizeOffset="0px 162px" onClick="onClickFieldExclude">
+                <ListItem profile="spMainItem" name="rowTemplate">
+                    <Text profile="spCol1"     position="0px 0px"   size="120px 40px" name="efNr"/>
+                    <Text profile="spColRight" position="130px 0px" size="120px 40px" name="efArea"/>
+                    <Text profile="spColRight" position="260px 0px" size="200px 40px" name="efFruit"/>
+                    <Text profile="spColRight" position="470px 0px" size="220px 40px" name="efActive"/>
+                </ListItem>
+            </SmoothList>
+
+        </GuiElement>
+
+        <!-- TAB 5: Einstellungen -->
+        <GuiElement id="spTab5" profile="emptyPanel" with="anchorStretchingYLeft pivotTopLeft" position="0px 0px" absoluteSizeOffset="0px 0px" visible="false">
+
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -82px">
+                <Text profile="spCol1" position="0px 4px" size="600px 32px" text="$l10n_ui_sp_settings_title"/>
+                <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+            </GuiElement>
+
+            <!-- Einstellungen im FA-Stil (Stepper). v77: in positionierte
+                 fs25_statisticsHeaderBox-Container gepackt (wie die Tab-Leiste),
+                 weil die Elemente nackt im Tab ans Fensterende rutschten und die
+                 Buttons nicht renderten. spTabBtn = identisch zu den Tab-Reitern
+                 (klicken zuverlaessig). -->
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -140px">
+                <Text profile="spCol1" position="0px 4px" size="360px 32px" text="$l10n_ui_sp_settings_allocStrategy"/>
+                <Button profile="spTabBtn" id="spAllocPrev" position="370px 0px" size="60px 32px" text="&lt;" onClick="onAllocPrev"/>
+                <Text profile="spColCenter" id="spAllocValue" position="440px 4px" size="320px 32px" text="—"/>
+                <Button profile="spTabBtn" id="spAllocNext" position="770px 0px" size="60px 32px" text="&gt;" onClick="onAllocNext"/>
+            </GuiElement>
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -190px">
+                <Text profile="spColGray" id="spAllocTip" position="0px 4px" size="1000px 32px" text="$l10n_ui_sp_settings_allocStrategy_tooltip"/>
+            </GuiElement>
+
+            <!-- Feld-Cutoff (v78): Felder ab Nummer N ignorieren. Gleicher
+                 FA-Stil-Stepper wie oben, in eigener HeaderBox. -->
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -240px">
+                <Text profile="spCol1" position="0px 4px" size="360px 32px" text="$l10n_ui_sp_settings_fieldCut"/>
+                <Button profile="spTabBtn" id="spFieldCutPrev" position="370px 0px" size="60px 32px" text="&lt;" onClick="onFieldCutPrev"/>
+                <Text profile="spColCenter" id="spFieldCutValue" position="440px 4px" size="320px 32px" text="aus"/>
+                <Button profile="spTabBtn" id="spFieldCutNext" position="770px 0px" size="60px 32px" text="&gt;" onClick="onFieldCutNext"/>
+            </GuiElement>
+            <GuiElement profile="fs25_statisticsHeaderBox" position="0px -290px">
+                <Text profile="spColGray" position="0px 4px" size="1000px 32px" text="$l10n_ui_sp_settings_fieldCut_tooltip"/>
+            </GuiElement>
+
+        </GuiElement>
+
+    </GuiElement>
+</GUI>

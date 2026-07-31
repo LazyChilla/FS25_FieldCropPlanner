@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUIProfiles>
+
+    <!-- Sortier-Button (kleiner als Tab-Button, passt als Spaltenheader) -->
+    <Profile name="spSortBtn" extends="baseReference">
+        <imageColor value="0 0 0 0"/>
+        <textFocusedColor value="$preset_fs25_colorMainHighlight"/>
+        <textHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+        <textSize value="13px"/>
+        <textBold value="false"/>
+        <textUpperCase value="true"/>
+        <textColor value="$preset_colorWhite_50"/>
+        <textAlignment value="left"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- Zelle 1: linksbündig (Fruchtname / Feldnummer) -->
+    <Profile name="spCol1" extends="baseReference" with="anchorStretchingYLeft">
+        <textBold value="false"/>
+        <textSize value="14px"/>
+        <textAlignment value="left"/>
+        <textColor value="$preset_fs25_colorMainLight"/>
+        <textSelectedColor value="$preset_fs25_colorMainDark"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- Zelle rechts -->
+    <Profile name="spColRight" extends="spCol1">
+        <textAlignment value="right"/>
+    </Profile>
+
+    <!-- Zelle zentriert (Häkchen / Pfeil) -->
+    <Profile name="spColCenter" extends="spCol1">
+        <textAlignment value="center"/>
+        <textBold value="true"/>
+    </Profile>
+
+    <!-- Listenzeile Standard -->
+    <Profile name="spMainItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="40px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+    <!-- Wie spMainItem, aber OHNE Zeilen-Cursor-Hervorhebung, fuers Feld-
+         Raster (Tab 3), wo eine "ausgewaehlte Zeile" keine Bedeutung hat
+         (10.07., LazyChilla-Wunsch). imageSelectedColor = imageColor macht
+         den Hover-Balken unsichtbar, statt ein zweites Profil-System zu bauen. -->
+    <Profile name="spFieldGridItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="40px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorGrey"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+    <Profile name="spColGray" extends="baseReference">
+        <textSize value="15px"/>
+        <textColor value="0.55 0.55 0.55 1"/>
+        <textWrap value="true"/>
+    </Profile>
+    <Profile name="spTabBtn" extends="baseReference">
+        <imageColor value="0 0 0 0"/>
+        <textFocusedColor value="$preset_fs25_colorMainHighlight"/>
+        <textHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+        <textSize value="15px"/>
+        <textBold value="true"/>
+        <textUpperCase value="true"/>
+        <textColor value="$preset_colorWhite_50"/>
+        <textAlignment value="left"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- SmoothList fuer Gesamtplan und Filter -->
+    <Profile name="spList" extends="emptyPanel" with="anchorStretchingYLeft pivotTopLeft">
+        <position value="0px -40px"/>
+        <absoluteSizeOffset value="0px 80px"/>
+    </Profile>
+
+    <!-- Listenzeile Standard -->
+    <Profile name="spListItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="38px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+
+    <!-- Zelle linksbündig -->
+    <Profile name="spCellLeft" extends="baseReference" with="anchorStretchingYLeft">
+        <textBold value="false"/>
+        <textSize value="15px"/>
+        <textAlignment value="left"/>
+        <textColor value="$preset_fs25_colorMainLight"/>
+        <textSelectedColor value="$preset_fs25_colorMainDark"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- Zelle rechtsbündig -->
+    <Profile name="spCellRight" extends="spCellLeft">
+        <textAlignment value="right"/>
+    </Profile>
+
+    <!-- Deckungsquote: fett + akzentuiert -->
+    <Profile name="spCellPct" extends="spCellRight">
+        <textBold value="true"/>
+        <textSize value="17px"/>
+        <textColor value="0.3 0.92 0.3 1"/>
+        <textSelectedColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+
+    <!-- Checkbox-Zeile fuer Filter-Tab -->
+    <Profile name="spFilterItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="38px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+
+    <!-- Feldnummer-Kaestchen fuer Tab 3 Feldübersicht -->
+    <Profile name="spFN" extends="baseReference">
+        <textSize value="14px"/>
+        <textAlignment value="center"/>
+        <textColor value="0.55 0.55 0.55 1"/>
+        <textSelectedColor value="0.55 0.55 0.55 1"/>
+    </Profile>
+
+</GUIProfiles>
