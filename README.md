@@ -9,6 +9,8 @@
 > **Version 1.0** — läuft im Spiel und wird weiter gepflegt. Rückmeldungen
 > willkommen (siehe *Fehler melden*).
 
+> ⭐ **Gefällt dir der Mod? Lass oben rechts einen Stern da** — ein Klick, und andere finden ihn leichter. · **Like it? Leave a star (top right)** — one click helps others discover it.
+
 ---
 
 ## Deutsch
